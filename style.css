@@ -3,8 +3,8 @@ body{
     display: flex;  
     font-family: 'Roboto'; 
     flex-direction: column;
-    background-color: #1F2937;
-    gap: 20px;
+    justify-content: space-between;
+    margin: 0;
 }
 
 li{
@@ -12,25 +12,19 @@ li{
     text-decoration: none;
 }
 
-.nav{
+.nav, .footer{
     display: flex;
     background-color: #1F2937;
     justify-content: space-between;
-    margin: 0;
-    padding: 0;
     gap: 20px;
 }
 
 .left-nav, .right-nav{
     display: flex;
     padding: 10px;
+    margin: 10px 20px;
     gap: 20px;
-    flex: 1;
-}
-.right-nav{
-    justify-content: flex-end;
-}
-.left-nav{
+    flex: 1 50%;
     justify-content: center;
 }
 
@@ -40,7 +34,7 @@ li{
     font-weight: 900;
 }
 
-.nav-links{
+.nav-links, .footer{
     color: #E5E7EB;
     font-size: 18px;
 }
@@ -48,16 +42,18 @@ li{
 /* Hero style */
 .main-hero{
     display: flex;
+    justify-content: space-evenly;
     background-color: #1F2937;
-    align-content: center;
-    padding: 0 20px;
+    padding: 20px 20px;
     gap: 20px;
-    width: 700px;
-    justify-content: space-between;
 }
 .hero-text, .hero-img{
-    border: 2px solid;
-    padding: 10px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.hero-text{
+    width: 25%;
 }
 
 img{
@@ -87,27 +83,70 @@ img{
 .info{
     background-color: white;
     display: flex;
-    flex-direction: column;
-    align-items: stretch;
+    flex-flow: column wrap;
+    gap: 30px;
 }
 
-.info-head > h1{
+.info-head{
     text-align: center;
     color: #1F2937;
     font-size: 36px;
     font-weight: 900;
+    flex:2;
+    padding: 20px;
 }
 .info-list{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    width: 700px;
+    gap: 5px;
 }
-.info-list > div{
-    width: 200px;
-    height: 200px;
-    border-radius: 5px;
+.info-item{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 150px;
+    height: 300px;
+    padding: 10px;
+}
+
+#item-1, #item-2, #item-3, #item-4{
+    height: 50%;
+    width: 100%;
+    border-radius: 10px;
     border: 2px solid  #3882F6;
+    text-align: center;
+    flex: 0 0 auto;
+}
+
+.info-item > p{
+    text-align: center;
+}
+
+/* Quotes */
+
+.quote-container{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #E5E7EB;
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 300;
+    padding: 20px;
+    justify-content: center;
+}
+
+.quote{
+    width: 50%;
+    text-align: end;
+}
+
+.author{
+    margin: 0 20px;
+}
+
+/* Footer */
+.footer{
+    justify-content: center;
 }
 
 
