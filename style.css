@@ -67,7 +67,7 @@ img{
     font-weight: 900;
 }
 
-.CTA{
+.CTA, .CTA-container{
     background-color: #3882F6;
     padding: 5px;
     border-radius: 3px;
@@ -132,16 +132,63 @@ img{
     color: #1F2937;
     font-weight: 300;
     padding: 20px;
-    justify-content: center;
 }
 
 .quote{
     width: 50%;
-    text-align: end;
+    text-align: start;
+    margin: auto;
+    padding: 100px;
 }
 
 .author{
     margin: 0 20px;
+    text-align: end;
+}
+
+/* Call to Action */
+
+.CTA-section{
+    padding: 100px;
+}
+.CTA-container{
+    display: flex;
+    width: 75%;
+    height: 10rem;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.CTA-text{
+    display: flex;
+    flex-direction: column;
+    flex: 2 1 400px;
+    justify-content: center;
+    margin: 0px 0px 0px 50px;
+    color: #F9FAF8;
+}
+
+.CTA-text > *{
+    margin: 0;
+}
+
+#CTA-subtext{
+    color: #E5E7EB;
+}
+
+.CTA-button{
+    align-self: center;
+    flex: 1 200px;
+    height: 20px;
+    text-align: center;
+}
+
+.CTA-button > button{
+    border-color: #E5E7EB;
+    border: 2px solid;
 }
 
 /* Footer */
