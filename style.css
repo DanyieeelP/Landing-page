@@ -12,57 +12,62 @@ li{
     text-decoration: none;
 }
 
-.nav, .footer{
+.nav, .footer, .hero-section, .info{
     display: flex;
     background-color: #1F2937;
-    justify-content: space-between;
     gap: 20px;
+    justify-content: center;
+}
+
+.nav-main, .hero-container, .CTA-container, .info{
+    display: flex;
+    width: 70%;
+    margin: 0;
+    justify-content: space-between;
+}
+
+#hero{
+    padding: 30px 0px;
 }
 
 .left-nav, .right-nav{
     display: flex;
-    padding: 10px;
-    margin: 10px 20px;
+    padding: 0;
     gap: 20px;
-    flex: 1 50%;
-    justify-content: center;
 }
 
-.logo{
+.logo, .left-text, .Call, .author{
     color: #F9FAF8;
     font-size: 24px;
     font-weight: 900;
 }
 
-.nav-links, .footer{
+.nav-links, .footer, .secondary-text, .CTA, #CTA-subtext{
     color: #E5E7EB;
     font-size: 18px;
 }
 
 /* Hero style */
-.main-hero{
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #1F2937;
-    padding: 20px 20px;
-    gap: 20px;
-}
-.hero-text, .hero-img{
-    justify-content: center;
-    padding: 20px;
+.hero-text{
+    align-content: center;
+    flex: 1;
 }
 
-.hero-text{
-    width: 25%;
+.hero-img{
+    display: flex;
+    flex: 1;
 }
 
 img{
-    width: 300px;
-    height: 300px;
+    margin: auto;
 }
 
-.hero-text > h1{
-    color: #F9FAF8;
+.left-text{
+    margin: 0;
+    padding: 10px 0;
+}
+
+#hero-main-text{
     font-size: 48px;
     font-weight: 900;
 }
@@ -74,30 +79,25 @@ img{
     border: none;
     width: 150px;
 }
-.CTA, .hero-text > p{
-    font-size: 18px;
-    color: #E5E7EB;
-}
 
 /* information */
-.info{
+#info{
     background-color: white;
-    display: flex;
-    flex-flow: column wrap;
-    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    padding: 50px 0px;
 }
 
-.info-head{
+.info-head, #quote{
     text-align: center;
     color: #1F2937;
     font-size: 36px;
     font-weight: 900;
-    flex:2;
     padding: 20px;
 }
 .info-list{
     display: flex;
-    justify-content: center;
     gap: 5px;
 }
 .info-item{
@@ -107,6 +107,8 @@ img{
     width: 150px;
     height: 300px;
     padding: 10px;
+    color: #1F2937;
+    text-align: center;
 }
 
 #item-1, #item-2, #item-3, #item-4{
@@ -118,48 +120,38 @@ img{
     flex: 0 0 auto;
 }
 
-.info-item > p{
-    text-align: center;
-}
-
 /* Quotes */
 
 .quote-container{
     display: flex;
     flex-wrap: wrap;
     background-color: #E5E7EB;
-    font-size: 36px;
-    color: #1F2937;
-    font-weight: 300;
     padding: 20px;
 }
 
-.quote{
+#quote{
+    font-weight: 300;
     width: 50%;
     text-align: start;
     margin: auto;
     padding: 100px;
 }
 
-.author{
+#author{
     margin: 0 20px;
     text-align: end;
+    color: #1F2937;
 }
 
 /* Call to Action */
-
 .CTA-section{
     padding: 100px;
 }
-.CTA-container{
-    display: flex;
-    width: 75%;
-    height: 10rem;
-    margin: auto;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 10px;
+#CTA-Main{
     border-radius: 10px;
+    margin: auto;
+    width: 70%;
+    padding: 50px;
 }
 
 .CTA-text{
@@ -168,15 +160,10 @@ img{
     flex: 2 1 400px;
     justify-content: center;
     margin: 0px 0px 0px 50px;
-    color: #F9FAF8;
 }
 
 .CTA-text > *{
     margin: 0;
-}
-
-#CTA-subtext{
-    color: #E5E7EB;
 }
 
 .CTA-button{
@@ -186,8 +173,7 @@ img{
     text-align: center;
 }
 
-.CTA-button > button{
-    border-color: #E5E7EB;
+.CTA{
     border: 2px solid;
 }
 
